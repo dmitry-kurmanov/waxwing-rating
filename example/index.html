@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Welcome to WW_Rating usage example</title>
+
+    <!-- <link rel="stylesheet" href="build/waxwing-rating.min.css" /> -->
+    <!-- <script src="build/waxwing-rating.min.js"></script> -->
+
+    <link rel="stylesheet" href="build/waxwing-rating.css" />
+    <script src="build/waxwing-rating.js"></script>
+  </head>
+
+  <body>
+    <div id="container"></div>
+
+    <script>
+      window.rating = new WW_Rating({
+        target: document.querySelector("#container"),
+        props: {
+          name: "mood",
+          items: [
+            {
+              value: "1"
+            },
+            {
+              value: "2"
+            },
+            {
+              value: "3",
+              checked: true
+            },
+            {
+              value: "4"
+            },
+            {
+              value: "5"
+            }
+          ]
+        }
+      });
+    </script>
+  </body>
+</html>
