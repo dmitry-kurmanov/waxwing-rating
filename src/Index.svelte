@@ -9,7 +9,6 @@
     name="{name}"
     bind:group="{value}"
     value="{item.value}"
-    aria-checked="{item.value === value}"
     class="waxwing-rating__input"
   />
   <label
