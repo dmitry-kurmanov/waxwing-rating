@@ -1,25 +1,27 @@
 <fieldset class="waxwing-rating">
   <legend class="waxwing-rating__title">{title}</legend>
 
-  {#each items as item}
+  <div class="waxwing-rating__group">
+    {#each items as item}
+    <input
+      type="radio"
+      id="{getItemId(item.value)}"
+      name="{name}"
+      bind:group="{value}"
+      value="{item.value}"
+      class="waxwing-rating__input"
+    />
+    <label
+      class="waxwing-rating__star"
+      for="{getItemId(item.value)}"
+      aria-label="{item.text || item.value}"
+    >
+      <Star></Star>
+    </label>
+    {/each}
 
-  <input
-    type="radio"
-    id="{getItemId(item.value)}"
-    name="{name}"
-    bind:group="{value}"
-    value="{item.value}"
-    class="waxwing-rating__input"
-  />
-  <label
-    class="waxwing-rating__star"
-    for="{getItemId(item.value)}"
-    aria-label="{item.text || item.value}"
-  >
-    <Star></Star>
-  </label>
-
-  {/each}
+    <div class="waxwing-rating__focus"></div>
+  </div>
 </fieldset>
 
 <script>
@@ -44,11 +46,29 @@
     clip: rect(0 0 0 0);
   }
 
+  :global(.waxwing-rating) {
+    user-select: none;
+  }
+
   :global(.waxwing-rating__star):hover svg {
-    fill: orange;
+    stroke: goldenrod;
   }
 
   :global(.waxwing-rating__input):checked + .waxwing-rating__star svg {
-    fill: orange;
+    fill: gold;
+  }
+
+  :global(.waxwing-rating__group) {
+    position: relative;
+  }
+
+  :global(.waxwing-rating__input:focus ~ .waxwing-rating__focus) {
+    position: absolute;
+    top: -0.2em;
+    right: -0.2em;
+    bottom: -0.2em;
+    left: -0.2em;
+    z-index: -1;
+    outline: 0.1em solid #4d90fe;
   }
 </style>

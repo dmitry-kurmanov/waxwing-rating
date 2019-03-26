@@ -11,7 +11,21 @@
   </head>
 
   <body>
-    <div id="container"></div>
+    <div id="container" class="rating-container"></div>
+
+    <div id="container2"></div>
+
+    <style>
+      .rating-container
+        .waxwing-rating__input:checked
+        + .waxwing-rating__star
+        svg {
+        fill: tomato;
+      }
+      .rating-container .waxwing-rating__star:hover svg {
+        stroke: gold;
+      }
+    </style>
 
     <script>
       window.rating = new WW_Rating({
@@ -48,6 +62,30 @@
             },
             {
               value: 9
+            }
+          ]
+        }
+      });
+
+      new WW_Rating({
+        target: document.querySelector("#container2"),
+        props: {
+          title: "Rate your health",
+          name: "health",
+          value: 3,
+          items: [
+            {
+              value: 1,
+              text: "very bad"
+            },
+            {
+              value: 2
+            },
+            {
+              value: 3
+            },
+            {
+              value: 4
             }
           ]
         }
