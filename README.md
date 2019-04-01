@@ -58,6 +58,8 @@ const rating = new WW_Rating({
     ]
   }
 });
+
+rating.title = "My New Title";
 ```
 
 ## styles
