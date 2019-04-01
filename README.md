@@ -11,8 +11,8 @@ https://github.com/dmitrykurmanov/waxwing-rating/blob/master/example/index.html
 
 ## adding
 ```js
-  import WW_Rating from "waxwing-rating";
-  import "waxwing-rating/dist/waxwing-rating.css";
+import WW_Rating from "waxwing-rating";
+import "waxwing-rating/dist/waxwing-rating.css";
 ```
  
 or with es5 style:  
