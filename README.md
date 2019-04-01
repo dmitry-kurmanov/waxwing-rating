@@ -55,6 +55,7 @@ you could override all styles via the css. For example:
 
 ## examples
 please see:
+https://plnkr.co/edit/VHoLBQzeEzSD5lDDEGdb?p=preview
 https://github.com/dmitrykurmanov/waxwing-rating/blob/master/example/index.html
 
 ## how to build
