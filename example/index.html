@@ -16,10 +16,7 @@
     <div id="container2"></div>
 
     <style>
-      .rating-container
-        .ww-rating__input:checked
-        + .ww-rating__star
-        svg {
+      .rating-container .ww-rating__input:checked + .ww-rating__star svg {
         fill: tomato;
       }
       .rating-container .ww-rating__star:hover svg {
@@ -36,8 +33,7 @@
           value: 3,
           items: [
             {
-              value: 1,
-              text: "very bad"
+              value: 1
             },
             {
               value: 2
@@ -79,13 +75,20 @@
               text: "very bad"
             },
             {
-              value: 2
+              value: 2,
+              text: "bad"
             },
             {
-              value: 3
+              value: 3,
+              text: "normal"
             },
             {
-              value: 4
+              value: 4,
+              text: "good"
+            },
+            {
+              value: 5,
+              text: "exelent"
             }
           ]
         }
