@@ -1,7 +1,7 @@
-<fieldset class="waxwing-rating">
-  <legend class="waxwing-rating__title">{title}</legend>
+<fieldset class="ww-rating">
+  <legend class="ww-rating__title">{title}</legend>
 
-  <div class="waxwing-rating__group">
+  <div class="ww-rating__group">
     {#each items as item}
     <input
       type="radio"
@@ -9,10 +9,10 @@
       name="{name}"
       bind:group="{value}"
       value="{item.value}"
-      class="waxwing-rating__input"
+      class="ww-rating__input"
     />
     <label
-      class="waxwing-rating__star"
+      class="ww-rating__star"
       for="{getItemId(item.value)}"
       aria-label="{item.text || item.value}"
     >
@@ -20,7 +20,7 @@
     </label>
     {/each}
 
-    <div class="waxwing-rating__focus"></div>
+    <div class="ww-rating__focus"></div>
   </div>
 </fieldset>
 
@@ -38,7 +38,7 @@
 </script>
 
 <style>
-  :global(.waxwing-rating__input) {
+  :global(.ww-rating__input) {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -46,23 +46,23 @@
     clip: rect(0 0 0 0);
   }
 
-  :global(.waxwing-rating) {
+  :global(.ww-rating) {
     user-select: none;
   }
 
-  :global(.waxwing-rating__star):hover svg {
+  :global(.ww-rating__star):hover svg {
     stroke: goldenrod;
   }
 
-  :global(.waxwing-rating__input):checked + .waxwing-rating__star svg {
+  :global(.ww-rating__input:checked + .ww-rating__star svg) {
     fill: gold;
   }
 
-  :global(.waxwing-rating__group) {
+  :global(.ww-rating__group) {
     position: relative;
   }
 
-  :global(.waxwing-rating__input:focus ~ .waxwing-rating__focus) {
+  :global(.ww-rating__input:focus ~ .ww-rating__focus) {
     position: absolute;
     top: -0.2em;
     right: -0.2em;
