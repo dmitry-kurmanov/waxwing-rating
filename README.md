@@ -65,8 +65,7 @@ https://github.com/dmitrykurmanov/waxwing-rating/blob/master/example/index.html
 * `npm test`
 
 # Thanks to
-[SveleJS](https://github.com/sveltejs/svelte)
-[RollupJS](https://github.com/rollup/rollup)
-[Ava](https://github.com/avajs/ava)
-
+[SveleJS](https://github.com/sveltejs/svelte)  
+[RollupJS](https://github.com/rollup/rollup)  
+[Ava](https://github.com/avajs/ava)  
 and [Vadim Makeev](https://www.youtube.com/watch?v=EbajTYI-gg8)
