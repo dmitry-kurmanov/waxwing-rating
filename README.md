@@ -1,6 +1,11 @@
 # waxwing-rating
 rating widget for the web
 
+## demos/examples
+https://plnkr.co/edit/VHoLBQzeEzSD5lDDEGdb?p=preview  
+https://codesandbox.io/s/mj1rw2opwj  
+https://github.com/dmitrykurmanov/waxwing-rating/blob/master/example/index.html  
+
 ## installation (npm): 
 `npm install waxwing-rating`
 
@@ -65,12 +70,6 @@ you could override all styles via the css. For example:
   stroke: gold;
 }
 ```
-
-## examples
-please see:
-https://plnkr.co/edit/VHoLBQzeEzSD5lDDEGdb?p=preview  
-https://codesandbox.io/s/mj1rw2opwj  
-https://github.com/dmitrykurmanov/waxwing-rating/blob/master/example/index.html  
 
 ## how to build
 * `git clone https://github.com/dmitrykurmanov/waxwing-rating.git`
