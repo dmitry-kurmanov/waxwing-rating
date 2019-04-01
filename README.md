@@ -1,8 +1,21 @@
 # waxwing-rating
 rating widget for the web
 
-## installation
-`npm install waxwing-rating`;
+## installation (npm): 
+`npm install waxwing-rating`
+
+## adding
+```js
+  import WW_Rating from "waxwing-rating";
+  import "waxwing-rating/dist/waxwing-rating.css";
+```
+ 
+or with es5 style:  
+ 
+```html
+<link rel="stylesheet" href="https://unpkg.com/waxwing-rating@0.0.1/dist/waxwing-rating.css">
+<script src="https://unpkg.com/waxwing-rating@0.0.1/dist/waxwing-rating.min.js"></script>
+```
 
 ## usage
 ```html
@@ -55,8 +68,9 @@ you could override all styles via the css. For example:
 
 ## examples
 please see:
-https://plnkr.co/edit/VHoLBQzeEzSD5lDDEGdb?p=preview
-https://github.com/dmitrykurmanov/waxwing-rating/blob/master/example/index.html
+https://plnkr.co/edit/VHoLBQzeEzSD5lDDEGdb?p=preview  
+https://codesandbox.io/s/mj1rw2opwj  
+https://github.com/dmitrykurmanov/waxwing-rating/blob/master/example/index.html  
 
 ## how to build
 * `git clone https://github.com/dmitrykurmanov/waxwing-rating.git`
