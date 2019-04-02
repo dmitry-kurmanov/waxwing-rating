@@ -80,7 +80,7 @@ you could override all styles via the css. For example:
 * `npm test`
 
 # Thanks to
-[SveleJS](https://github.com/sveltejs/svelte)  
+[SvelteJS](https://github.com/sveltejs/svelte)  
 [RollupJS](https://github.com/rollup/rollup)  
-[Ava](https://github.com/avajs/ava)  
+[AvaJS](https://github.com/avajs/ava)  
 and [Vadim Makeev](https://www.youtube.com/watch?v=EbajTYI-gg8)
