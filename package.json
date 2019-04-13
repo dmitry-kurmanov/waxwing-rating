@@ -15,7 +15,8 @@
   "author": "dmitrykurmanov",
   "license": "MIT",
   "files": [
-    "dist"
+    "dist",
+    "src"
   ],
   "devDependencies": {
     "ava": "^1.3.1",
