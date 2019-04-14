@@ -1,13 +1,18 @@
 # waxwing-rating
-rating widget for the web
+rating widget for the web with the accessibility and the keyboard usage
+
+## demos/examples
+https://plnkr.co/edit/VHoLBQzeEzSD5lDDEGdb?p=preview  
+https://codesandbox.io/s/mj1rw2opwj  
+https://github.com/dmitrykurmanov/waxwing-rating/blob/master/example/index.html  
 
 ## installation (npm): 
 `npm install waxwing-rating`
 
 ## adding
 ```js
-  import WW_Rating from "waxwing-rating";
-  import "waxwing-rating/dist/waxwing-rating.css";
+import WW_Rating from "waxwing-rating";
+import "waxwing-rating/dist/waxwing-rating.css";
 ```
  
 or with es5 style:  
@@ -53,6 +58,8 @@ const rating = new WW_Rating({
     ]
   }
 });
+
+rating.title = "My New Title";
 ```
 
 ## styles
@@ -66,12 +73,6 @@ you could override all styles via the css. For example:
 }
 ```
 
-## examples
-please see:
-https://plnkr.co/edit/VHoLBQzeEzSD5lDDEGdb?p=preview  
-https://codesandbox.io/s/mj1rw2opwj  
-https://github.com/dmitrykurmanov/waxwing-rating/blob/master/example/index.html  
-
 ## how to build
 * `git clone https://github.com/dmitrykurmanov/waxwing-rating.git`
 * `npm install`
@@ -79,7 +80,7 @@ https://github.com/dmitrykurmanov/waxwing-rating/blob/master/example/index.html
 * `npm test`
 
 # Thanks to
-[SveleJS](https://github.com/sveltejs/svelte)  
+[SvelteJS](https://github.com/sveltejs/svelte)  
 [RollupJS](https://github.com/rollup/rollup)  
-[Ava](https://github.com/avajs/ava)  
+[AvaJS](https://github.com/avajs/ava)  
 and [Vadim Makeev](https://www.youtube.com/watch?v=EbajTYI-gg8)
