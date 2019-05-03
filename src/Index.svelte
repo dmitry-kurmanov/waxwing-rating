@@ -9,7 +9,7 @@
       name="{name}"
       bind:group="{value}"
       value="{item.value}"
-      class="ww-rating__input"
+      class="{getClasses(value, item.value)}"
     />
     <label
       class="ww-rating__star"
@@ -32,8 +32,19 @@
   export let items = [];
   export let value = null;
 
-  const getItemId = value => {
-    return name + "-" + value;
+  export let colorPreviousValues = true;
+
+  const getItemId = itemValue => {
+    return name + "-" + itemValue;
+  };
+
+  const getClasses = (value, itemValue) => {
+    var classes = "ww-rating__input";
+
+    if (colorPreviousValues && itemValue <= value)
+      classes += " ww-rating__input--checked";
+
+    return classes;
   };
 </script>
 
@@ -55,6 +66,10 @@
   }
 
   :global(.ww-rating__input:checked + .ww-rating__star svg) {
+    fill: gold;
+  }
+
+  :global(.ww-rating__input--checked + .ww-rating__star svg) {
     fill: gold;
   }
 

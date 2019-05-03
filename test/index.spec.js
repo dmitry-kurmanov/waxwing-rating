@@ -100,3 +100,18 @@ test("get/set items property", async t => {
 
   t.deepEqual(rating.items, []);
 });
+
+test("get/set colorPreviousValues property", async t => {
+  const rating = new WW_Rating({
+    target: document.body,
+    props: {
+      name: name
+    }
+  });
+
+  t.is(rating.colorPreviousValues, true);
+
+  rating.colorPreviousValues = false;
+
+  t.is(rating.colorPreviousValues, false);
+});

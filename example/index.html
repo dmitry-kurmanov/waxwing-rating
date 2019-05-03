@@ -16,16 +16,21 @@
     <div id="container2"></div>
 
     <style>
-      .rating-container .ww-rating__input:checked + .ww-rating__star svg {
+      /* .rating-container .ww-rating__input:checked + .ww-rating__star svg {
+        fill: tomato;
+      } */
+
+      .rating-container .ww-rating__input--checked + .ww-rating__star svg {
         fill: tomato;
       }
+
       .rating-container .ww-rating__star:hover svg {
         stroke: gold;
       }
     </style>
 
     <script>
-      window.rating = new WW_Rating({
+      window.rating1 = new WW_Rating({
         target: document.querySelector("#container"),
         props: {
           title: "Rate your mood",
@@ -63,12 +68,13 @@
         }
       });
 
-      new WW_Rating({
+      window.rating2 = new WW_Rating({
         target: document.querySelector("#container2"),
         props: {
           title: "Rate your health",
           name: "health",
           value: 3,
+          colorPreviousValues: false,
           items: [
             {
               value: 1,
