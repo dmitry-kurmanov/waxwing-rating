@@ -115,3 +115,18 @@ test("get/set colorPreviousValues property", async t => {
 
   t.is(rating.colorPreviousValues, false);
 });
+
+test("get/set icon property", async t => {
+  const rating = new WW_Rating({
+    target: document.body,
+    props: {
+      name: name
+    }
+  });
+
+  t.is(rating.icon, "star");
+
+  rating.icon = "github";
+
+  t.is(rating.icon, "github");
+});

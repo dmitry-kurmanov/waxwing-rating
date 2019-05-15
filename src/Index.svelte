@@ -1,3 +1,5 @@
+<Icons></Icons>
+
 <fieldset class="ww-rating">
   <legend class="ww-rating__title">{title}</legend>
 
@@ -16,7 +18,17 @@
       for="{getItemId(item.value)}"
       aria-label="{item.text || item.value}"
     >
-      <Star></Star>
+      <svg
+        width="24px"
+        height="24px"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <use xlink:href="#ww-{icon}-svg" />
+      </svg>
     </label>
     {/each}
 
@@ -25,7 +37,7 @@
 </fieldset>
 
 <script>
-  import Star from "./Star.svelte";
+  import Icons from "./Icons.svelte";
 
   export let title = "";
   export let name = "";
@@ -33,6 +45,7 @@
   export let value = null;
 
   export let colorPreviousValues = true;
+  export let icon = "star";
 
   const getItemId = itemValue => {
     return name + "-" + itemValue;
