@@ -1,6 +1,10 @@
 <Icons></Icons>
 
-<fieldset class="ww-rating">
+<fieldset
+  class="ww-rating"
+  tabindex="{tabIndex}"
+  onfocus="this.querySelector('input').focus();"
+>
   <legend class="ww-rating__title">{title}</legend>
 
   <div class="ww-rating__group">
@@ -47,6 +51,8 @@
   export let colorPreviousValues = true;
   export let icon = "star";
 
+  export let tabIndex = 0;
+
   const getItemId = itemValue => {
     return name + "-" + itemValue;
   };
@@ -72,6 +78,7 @@
 
   :global(.ww-rating) {
     user-select: none;
+    position: relative;
   }
 
   :global(.ww-rating__star):hover svg {
@@ -87,7 +94,7 @@
   }
 
   :global(.ww-rating__group) {
-    position: relative;
+    /* position: relative; */
   }
 
   :global(.ww-rating__input:focus ~ .ww-rating__focus) {
