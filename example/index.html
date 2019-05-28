@@ -16,9 +16,13 @@
     <div id="container2"></div>
 
     <style>
-      /* .rating-container .ww-rating__input:checked + .ww-rating__star svg {
-        fill: tomato;
-      } */
+      .rating-container .ww-rating--focus {
+        border-color: tomato;
+      }
+
+      .rating-container .ww-rating__title--focus {
+        color: tomato;
+      }
 
       .rating-container .ww-rating__input--checked + .ww-rating__star svg {
         fill: tomato;
@@ -35,7 +39,6 @@
         props: {
           title: "Rate your mood",
           name: "mood",
-          tabIndex: 2,
           value: 3,
           items: [
             {
@@ -75,7 +78,6 @@
           title: "Rate your health",
           name: "health",
           value: 3,
-          tabIndex: 1,
           icon: "github",
           colorPreviousValues: false,
           items: [

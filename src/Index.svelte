@@ -1,11 +1,9 @@
 <Icons></Icons>
 
-<fieldset
-  class="ww-rating"
-  tabindex="{tabIndex}"
-  onfocus="this.querySelector('input').focus();"
->
-  <legend class="ww-rating__title">{title}</legend>
+<fieldset class="ww-rating {isFocus ? 'ww-rating--focus' : ''}">
+  <legend class="ww-rating__title {isFocus ? 'ww-rating__title--focus' : ''}">
+    {title}
+  </legend>
 
   <div class="ww-rating__group">
     {#each items as item}
@@ -16,6 +14,8 @@
       bind:group="{value}"
       value="{item.value}"
       class="{getClasses(value, item.value)}"
+      on:focus="{handleFocus}"
+      on:blur="{handleBlur}"
     />
     <label
       class="ww-rating__star"
@@ -51,8 +51,6 @@
   export let colorPreviousValues = true;
   export let icon = "star";
 
-  export let tabIndex = 0;
-
   const getItemId = itemValue => {
     return name + "-" + itemValue;
   };
@@ -65,20 +63,39 @@
 
     return classes;
   };
+
+  let isFocus = false;
+
+  const handleFocus = () => {
+    isFocus = true;
+  };
+
+  const handleBlur = () => {
+    isFocus = false;
+  };
 </script>
 
 <style>
+  :global(.ww-rating) {
+    user-select: none;
+    position: relative;
+  }
+
+  :global(.ww-rating--focus) {
+    border-color: #4d90fe;
+    border-style: solid;
+  }
+
+  :global(.ww-rating__title--focus) {
+    color: #4d90fe;
+  }
+
   :global(.ww-rating__input) {
     position: absolute;
     width: 1px;
     height: 1px;
     overflow: hidden;
     clip: rect(0 0 0 0);
-  }
-
-  :global(.ww-rating) {
-    user-select: none;
-    position: relative;
   }
 
   :global(.ww-rating__star):hover svg {
@@ -91,19 +108,5 @@
 
   :global(.ww-rating__input--checked + .ww-rating__star svg) {
     fill: gold;
-  }
-
-  :global(.ww-rating__group) {
-    /* position: relative; */
-  }
-
-  :global(.ww-rating__input:focus ~ .ww-rating__focus) {
-    position: absolute;
-    top: -0.2em;
-    right: -0.2em;
-    bottom: -0.2em;
-    left: -0.2em;
-    z-index: -1;
-    outline: 0.1em solid #4d90fe;
   }
 </style>
