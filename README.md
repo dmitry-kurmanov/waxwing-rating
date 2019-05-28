@@ -7,9 +7,9 @@
 * css customizable
 
 ## demos/examples
-https://plnkr.co/edit/hjh2SEQSs7kLC6Wxu8c6?p=preview  
-https://codesandbox.io/s/mj1rw2opwj  
-https://github.com/dmitrykurmanov/waxwing-rating/blob/master/example/index.html  
+* [Plunker](https://plnkr.co/edit/hjh2SEQSs7kLC6Wxu8c6?p=preview)  
+* [Codesandbox](https://codesandbox.io/s/mj1rw2opwj)  
+* [Github](https://github.com/dmitrykurmanov/waxwing-rating/blob/master/example/index.html)  
 
 ## installation (npm): 
 `npm install waxwing-rating`
