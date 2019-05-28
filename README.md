@@ -33,6 +33,7 @@ const rating = new WW_Rating({
   props: {
     title: "Rate your health",
     name: "health",
+    icon: "star",
     value: 3,
     items: [
       {
@@ -65,6 +66,12 @@ rating.title = "My New Title";
 ## styles
 you could override all styles via the css. For example:
 ```css
+.rating-container .ww-rating--focus {
+  border-color: tomato;
+}
+.rating-container .ww-rating__title--focus {
+  color: tomato;
+} 
 .rating-container .ww-rating__input:checked + .ww-rating__star svg {
   fill: tomato;
 }
