@@ -1,6 +1,6 @@
 ## advantages
 * framework agnostic
-* [4kb](https://bundlephobia.com/result?p=waxwing-rating) 
+* [4kb(min, gzip)](https://bundlephobia.com/result?p=waxwing-rating) 
 * accessibility
 * keyboard usage
 * dynamic properties
