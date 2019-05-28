@@ -1,5 +1,9 @@
-# waxwing-rating 
-[4kb](https://bundlephobia.com/result?p=waxwing-rating) rating widget for the web with accessibility and keyboard usage
+* framework agnostic
+* [4kb](https://bundlephobia.com/result?p=waxwing-rating) 
+* accessibility
+* keyboard usage
+* dynamic properties
+* css customizable
 
 ## demos/examples
 https://plnkr.co/edit/hjh2SEQSs7kLC6Wxu8c6?p=preview  
