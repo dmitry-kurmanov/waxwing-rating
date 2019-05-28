@@ -93,6 +93,5 @@ you could override all styles via the css. For example:
 # Thanks to
 [SvelteJS](https://github.com/sveltejs/svelte)  
 [RollupJS](https://github.com/rollup/rollup)  
-[AvaJS](https://github.com/avajs/ava)  
-[Bundlephobia](https://github.com/pastelsky/bundlephobia)  
+[AvaJS](https://github.com/avajs/ava)   
 and [Vadim Makeev](https://www.youtube.com/watch?v=EbajTYI-gg8)
