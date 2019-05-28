@@ -1,5 +1,5 @@
 # waxwing-rating
-rating widget for the web with the accessibility and the keyboard usage
+rating widget for the web with accessibility and keyboard usage
 
 ## demos/examples
 https://plnkr.co/edit/hjh2SEQSs7kLC6Wxu8c6?p=preview  
