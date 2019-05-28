@@ -2,7 +2,7 @@
 rating widget for the web with the accessibility and the keyboard usage
 
 ## demos/examples
-https://plnkr.co/edit/hjh2SEQSs7kLC6Wxu8c6?p=preview
+https://plnkr.co/edit/hjh2SEQSs7kLC6Wxu8c6?p=preview  
 https://codesandbox.io/s/mj1rw2opwj  
 https://github.com/dmitrykurmanov/waxwing-rating/blob/master/example/index.html  
 
