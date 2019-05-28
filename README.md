@@ -1,3 +1,4 @@
+## advantages
 * framework agnostic
 * [4kb](https://bundlephobia.com/result?p=waxwing-rating) 
 * accessibility
