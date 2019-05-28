@@ -9,13 +9,12 @@ https://github.com/dmitrykurmanov/waxwing-rating/blob/master/example/index.html
 ## installation (npm): 
 `npm install waxwing-rating`
 
-## adding
 ```js
 import WW_Rating from "waxwing-rating";
 import "waxwing-rating/dist/waxwing-rating.css";
 ```
  
-or with es5 style:  
+## installation (es5 style / script):  
  
 ```html
 <link rel="stylesheet" href="https://unpkg.com/waxwing-rating@0.0.1/dist/waxwing-rating.css">
