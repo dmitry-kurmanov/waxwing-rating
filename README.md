@@ -65,6 +65,8 @@ const rating = new WW_Rating({
 });
 
 rating.title = "My New Title";
+
+console.log(rating.value);
 ```
 
 ## styles
