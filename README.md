@@ -4,7 +4,7 @@
 * accessibility
 * keyboard usage
 * dynamic properties
-* css customizable
+* customizable css 
 
 ## demos/examples
 * [Plunker](https://plnkr.co/edit/hjh2SEQSs7kLC6Wxu8c6?p=preview)  
