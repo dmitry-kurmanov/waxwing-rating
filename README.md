@@ -1,3 +1,5 @@
+![image](https://user-images.githubusercontent.com/22315929/216287909-3b4047e7-6ebc-45d2-ac1c-788fa9a771cd.png)
+
 ## advantages
 * framework agnostic
 * [4kb(min, gzip)](https://bundlephobia.com/result?p=waxwing-rating) 
